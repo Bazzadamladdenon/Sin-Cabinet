@@ -3,7 +3,7 @@ const inner = document.querySelector(".inner");
 const indicator = document.querySelector(".indicator");
 
 function setCoords(e) {
-  // indicator.innerText=`ON`;
+  // EXAMINE COORDINATES INTERACTIVELY THEN REPLACE VALUES BASED ON YOUR IMAGE
   if (e.offsetX > 199 && e.offsetX < 256 && e.offsetY > 95 && e.offsetY < 155) {
     indicator.innerHTML = "BLACK SWAN<br />IMP // TYPE I<br />D1 // D5 // D8<br /><br /><i>Who or what pushed you into this hole?</i><br />Losing my fiancé.<br /><br /><i>Who or what is keeping you from going over the edge?</i><br />My love for my neighbours.<br /><br /><i>What are you most ashamed of?</i><br />Wasting my own potential.<br /><br />Elizabeth Braband<br />† 2018-10-14";
     }
@@ -16,6 +16,7 @@ function setCoords(e) {
   else {
     indicator.innerText = `SELECT A RELIC`;
     }
+  // UNCOMMENT TO EXAMINE COORDINATES
   // log.innerText = `
   //   Offset X/Y: ${e.offsetX}, ${e.offsetY}
   //   Viewport X/Y: ${e.clientX}, ${e.clientY}
